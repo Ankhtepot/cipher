@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CipherOmatik", "CipherOmatik\CipherOmatik.csproj", "{A0797FAF-1D37-4081-9221-A5B817472BC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{B55CDCC6-115B-4208-8DC2-A84B51CE3ED3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Classes\Data.csproj", "{B55CDCC6-115B-4208-8DC2-A84B51CE3ED3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlls", "Controls\Controlls.csproj", "{287C3875-E015-447A-83C0-B4064D2AB3AA}"
 EndProject

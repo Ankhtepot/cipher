@@ -1,0 +1,6 @@
+D:\Dokumenty\VS\Tieto\Classes\bin\Debug\Classes.dll
+D:\Dokumenty\VS\Tieto\Classes\bin\Debug\Classes.pdb
+D:\Dokumenty\VS\Tieto\Classes\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\Dokumenty\VS\Tieto\Classes\obj\Debug\Data.csproj.CoreCompileInputs.cache
+D:\Dokumenty\VS\Tieto\Classes\obj\Debug\Classes.dll
+D:\Dokumenty\VS\Tieto\Classes\obj\Debug\Classes.pdb

@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Classes
-{ //base class for crypting methods
+namespace Data { //base class for crypting methods
     public abstract class CipherBase : ICipher
     {
         private String name;

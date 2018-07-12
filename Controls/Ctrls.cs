@@ -1,6 +1,6 @@
-﻿using Classes;
+﻿using Data;
 using System;
-using System.Windows.Forms;
+using Xceed.Wpf.Toolkit;
 
 namespace Controls {
     public static class Ctrls {
@@ -15,25 +15,25 @@ namespace Controls {
             return true;
         }
         //sets AppOptions when crypting method changes
-        public static void SetAppOptionsCryptingMethod(int newValue) {
+        public static void SetAppOptionsCryptingMethod(System.Windows.Controls.Label lbl,IntegerUpDown nud, int newValue) {
             ICipher checkMethod = GetCipher(newValue);
             if (checkMethod != null) {
                 AppOptions.CryptingMethod = checkMethod;
             } else {
-                MessageBox.Show("Setting crypting method failed");
+                System.Windows.Forms.MessageBox.Show("Setting crypting method failed");
                 return;
             }
             if (((CipherBase)AppOptions.CryptingMethod).HasKey) {
                 CipherKeyBase keyCipherMethod = (CipherKeyBase)AppOptions.CryptingMethod;
-                AppOptions.LbKeyText = String.Format($"{keyCipherMethod.Name}" +
+                lbl.Content = String.Format($"{keyCipherMethod.Name}" +
                     $" method Key value ({keyCipherMethod.KeyMinConstraint}" +
                     $" - {keyCipherMethod.KeyMaxConstraint}):");
-                AppOptions.NudKeyVisible = true;
-                AppOptions.NudKeyMinimum = keyCipherMethod.KeyMinConstraint;
-                AppOptions.NudKeyMaximum = keyCipherMethod.KeyMaxConstraint;
+                nud.Visibility = System.Windows.Visibility.Visible;
+                nud.Minimum = keyCipherMethod.KeyMinConstraint;
+                nud.Maximum = keyCipherMethod.KeyMaxConstraint;
             } else {
-                AppOptions.LbKeyText = String.Format($"{((CipherBase)AppOptions.CryptingMethod).Name} method don't use crypting key value");
-                AppOptions.NudKeyVisible = false;
+                lbl.Content = String.Format($"{((CipherBase)AppOptions.CryptingMethod).Name} method don't use crypting key value");
+                nud.Visibility = System.Windows.Visibility.Hidden;
             }
         }
         //"factory" for getting cipher method

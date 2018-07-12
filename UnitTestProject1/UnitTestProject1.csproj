@@ -59,9 +59,9 @@
       <Project>{a0797faf-1d37-4081-9221-a5b817472bc2}</Project>
       <Name>CipherOmatik</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Classes\Classes.csproj">
+    <ProjectReference Include="..\Classes\Data.csproj">
       <Project>{b55cdcc6-115b-4208-8dc2-a84b51ce3ed3}</Project>
-      <Name>Classes</Name>
+      <Name>Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\Controls\Controlls.csproj">
       <Project>{287c3875-e015-447a-83c0-b4064d2ab3aa}</Project>

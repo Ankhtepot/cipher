@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Classes {
+namespace Data {
     public class CipherCaesar : CipherKeyBase {
 
         public CipherCaesar(int keyValue) : base(1, 26, keyValue) {

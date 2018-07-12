@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Classes { //base class for crypting methods with keyValue
+﻿namespace Data { //base class for crypting methods with keyValue
     public abstract class CipherKeyBase : CipherBase {
         private int keyMinConstraint;
         private int keyMaxConstraint;

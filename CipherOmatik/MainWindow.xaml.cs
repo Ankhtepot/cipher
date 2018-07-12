@@ -1,18 +1,6 @@
 ﻿using Controls;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace CipherOmatik {
     /// <summary>
@@ -66,8 +54,7 @@ namespace CipherOmatik {
         }
 
         private void BuExit_Click(object sender, EventArgs e) {
-            if (Ctrls.ExitCheck()) Application.Current.Shutdown();
-            else MessageBox.Show("Cant exit right now");
+            ExitProgram();
         }
 
         private void BuCipher_Click(object o, EventArgs e) {
@@ -80,16 +67,7 @@ namespace CipherOmatik {
         }
 
         private void SetAppOptionsCryptingMethod(int newValue) {
-            Ctrls.SetAppOptionsCryptingMethod(newValue);
-            if (Ctrls.KeyCryptingMethod()) {
-                LbKey.Content = AppOptions.LbKeyText;
-                NudKey.Visibility = AppOptions.NudKeyVisible ? Visibility.Visible : Visibility.Hidden;
-                NudKey.Minimum = AppOptions.NudKeyMinimum;
-                NudKey.Maximum = AppOptions.NudKeyMaximum;
-            } else {
-                LbKey.Content = AppOptions.LbKeyText;
-                NudKey.Visibility = Visibility.Hidden;
-            }
+            Ctrls.SetAppOptionsCryptingMethod(LbKey,NudKey,newValue);
         }
 
         private void SetKeyValue(int value) {
@@ -104,6 +82,11 @@ namespace CipherOmatik {
         private void MoveResultToInput() {
             TbInput.Text = TbResult.Text;
             TbResult.Text = "";
+        }
+
+        private void ExitProgram() {
+            if (Ctrls.ExitCheck()) System.Windows.Application.Current.Shutdown();
+            else System.Windows.Forms.MessageBox.Show("Cant exit right now");
         }
     }
 }
