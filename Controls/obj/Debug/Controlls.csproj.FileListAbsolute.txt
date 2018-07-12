@@ -1,0 +1,9 @@
+D:\Dokumenty\VS\Tieto\Controls\bin\Debug\Controls.dll
+D:\Dokumenty\VS\Tieto\Controls\bin\Debug\Controls.pdb
+D:\Dokumenty\VS\Tieto\Controls\bin\Debug\Classes.dll
+D:\Dokumenty\VS\Tieto\Controls\bin\Debug\Classes.pdb
+D:\Dokumenty\VS\Tieto\Controls\obj\Debug\Controlls.csprojResolveAssemblyReference.cache
+D:\Dokumenty\VS\Tieto\Controls\obj\Debug\Controlls.csproj.CoreCompileInputs.cache
+D:\Dokumenty\VS\Tieto\Controls\obj\Debug\Controlls.csproj.CopyComplete
+D:\Dokumenty\VS\Tieto\Controls\obj\Debug\Controls.dll
+D:\Dokumenty\VS\Tieto\Controls\obj\Debug\Controls.pdb
